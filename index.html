@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DevSmart – Informatique, Réseaux & Sites Web en Tunisie</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+<a href="#top" class="logo" aria-label="DevSmart – accueil">
+  <img class="lm" src="c:\Users\zayne\OneDrive\Desktop\projet DevSmart\logo-mark.webp" alt="">
+  <img class="lw" src="c:\Users\zayne\OneDrive\Desktop\projet DevSmart\logo-mark.webp" alt="DevSmart"></a>
+<nav>
+  <a href="#produits">Produits</a>
+  <a href="#services">Services</a>
+  <a href="#devis">Devis</a>
+  <a href="#equipe">Équipe</a>
+  <a href="#contact">Contact</a>
+</nav>
+<button class="cartbtn" id="open" aria-label="Ouvrir le panier">🛒 Panier <i id="cnt">0</i></button>
+</div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+<div>
+  <span class="chip">Livraison dans toute la Tunisie</span>
+<h1>Le matériel informatique qu'il vous faut, au meilleur prix.</h1>
+<p>Ordinateurs, composants, accessoires et réseaux. DevSmart accompagne aussi les entreprises : sites web, installation réseau et maintenance.</p>
+<div class="cta">
+  <a class="btn" href="#produits">Voir les offres</a>
+  <a class="btn ghost" href="#services">Nos services pro</a>
+</div>
+</div>
+<div class="panel">
+<div><em>🔥</em><p><b>Promos chaque semaine</b><small>Jusqu'à -20% sur une sélection</small></p></div>
+<div><em>🚚</em><p><b>Livraison gratuite dès 300 DT</b><small>d'accessoires, partout en Tunisie</small></p></div>
+<div><em>🛠️</em><p><b>Installation & maintenance</b><small>Pour particuliers et entreprises</small></p></div>
+</div>
+</div>
+</div>
+
+<section id="produits">
+  <div class="wrap">
+<h2>Nos produits & promotions</h2><p class="sub">Prix en dinars tunisiens (DT), TVA comprise.</p>
+<div class="free"><span style="font-size:30px">🎁</span><span><b>Livraison gratuite</b> dès <b>300 DT</b> d'achat d'accessoires. Sinon 8 DT partout en Tunisie.</span></div>
+<div class="bar" id="bar"></div><div class="grid" id="grid"></div>
+</div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+  <h2>Services pour les entreprises</h2>
+  <p class="sub">De la création de votre site web à la maintenance de votre parc informatique : une seule équipe, un seul interlocuteur.</p>
+  <div class="svc">
+<article class="sv"><em>🌐</em>
+  <h3>Création de site web officiel</h3>
+  <p>Une vitrine professionnelle pour votre entreprise, visible sur mobile, tablette et ordinateur.</p>
+  <ul>
+    <li>Site vitrine, e-commerce ou landing page</li>
+    <li>Design sur mesure aux couleurs de votre marque</li>
+    <li>Nom de domaine, hébergement et e-mails pro</li>
+    <li>Référencement Google (SEO) de base</li>
+    <li>Liens WhatsApp, Facebook, Instagram et Google Maps</li>
+    <li>Formation pour gérer votre contenu</li>
+  </ul>
+  <p class="pr">À partir de 800 DT</p>
+  <button class="btn" onclick="ask('Création de site web')">Demander un devis</button>
+</article>
+<article class="sv"><em>📡</em>
+  <h3>Installation réseaux</h3>
+  <p>Un réseau rapide, stable et sécurisé pour vos bureaux, magasins, hôtels, écoles ou cabinets.</p>
+  <ul>
+    <li>Câblage structuré RJ45 Cat6 et fibre optique</li>
+    <li>Wi-Fi professionnel : bornes et solutions mesh</li>
+    <li>Baies de brassage, switchs et routeurs</li>
+    <li>Sécurité : pare-feu, VLAN et VPN</li>
+    <li>Caméras IP et vidéosurveillance</li>
+    <li>Tests, recette et documentation du réseau</li>
+  </ul>
+  <p class="pr">Visite et devis gratuits</p>
+  <button class="btn" onclick="ask('Installation réseau')">Demander un devis</button>
+</article>
+<article class="sv"><em>🔧</em>
+  <h3>Maintenance informatique</h3>
+  <p>Évitez les pannes et gardez votre activité en marche, avec un technicien à votre écoute.</p>
+  <ul>
+    <li>Contrat de maintenance annuel</li>
+    <li>Dépannage sur site et assistance à distance</li>
+    <li>Maintenance préventive : nettoyage et mises à jour</li>
+    <li>Sauvegarde des données et antivirus</li>
+    <li>Gestion et inventaire du parc informatique</li>
+    <li>Remplacement du matériel sous garantie</li>
+  </ul>
+  <p class="pr">À partir de 120 DT / mois</p>
+  <button class="btn" onclick="ask('Maintenance informatique')">Demander un devis</button>
+</article>
+<article class="sv"><em>🖥️</em>
+  <h3>Équipement informatique</h3>
+  <p>Équipez toute votre équipe avec du matériel fiable, livré prêt à l'emploi.</p>
+  <ul>
+    <li>Postes de travail, portables et serveurs</li>
+    <li>Imprimantes, copieurs et onduleurs</li>
+    <li>Prix spéciaux pour les entreprises</li>
+    <li>Installation et configuration incluses</li>
+    <li>Facture avec TVA et garantie constructeur</li>
+  </ul>
+  <p class="pr">Prix entreprises sur devis</p>
+  <button class="btn" onclick="ask('Équipement pour entreprise')">Demander un devis</button>
+</article>
+</div>
+  <h3 class="ph">Nos formules de maintenance</h3>
+  <div class="plans">
+    <div class="plan">
+  <h4>Essentiel</h4><b>120 DT <small>/ mois</small></b>
+  <ul>
+    <li>1 visite préventive par trimestre</li>
+    <li>Assistance à distance</li>
+    <li>Réponse sous 48 h</li>
+  </ul>
+</div>
+<div class="plan pop">
+  <h4>Pro</h4><b>250 DT <small>/ mois</small></b>
+  <ul>
+    <li>1 visite préventive par mois</li>
+    <li>Assistance illimitée</li>
+    <li>Réponse sous 24 h</li>
+    <li>Sauvegarde et antivirus inclus</li>
+  </ul>
+</div>
+<div class="plan">
+  <h4>Premium</h4><b>Sur devis</b>
+  <ul>
+    <li>Intervention sous 4 h</li>
+    <li>Technicien dédié</li>
+    <li>Supervision du réseau</li>
+    <li>Remplacement prioritaire du matériel</li>
+  </ul>
+</div>
+</div>
+  <h3 class="ph">Comment ça marche ?</h3><div class="steps">
+    <div><i>1</i><h4>Contact</h4><p>Vous nous expliquez votre besoin par téléphone, WhatsApp ou formulaire.</p></div>
+    <div><i>2</i><h4>Visite et devis gratuit</h4><p>Nous étudions votre projet et vous envoyons une offre claire sous 24 h.</p></div>
+    <div><i>3</i><h4>Réalisation</h4><p>Notre équipe installe, configure et teste, dans les délais convenus.</p></div>
+    <div><i>4</i><h4>Suivi et support</h4><p>Formation, garantie et assistance après la livraison.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="devis"><div class="wrap"><div class="qwrap"><div>
+  <h2>Demandez votre devis gratuit</h2><p class="sub">Décrivez votre besoin, nous vous répondons sous 24 h avec une proposition adaptée à votre budget.</p>
+  <ul class="chk">
+    <li>Devis gratuit et sans engagement</li>
+    <li>Déplacement dans toute la Tunisie</li>
+    <li>Réponse sous 24 h</li>
+    <li>Un interlocuteur unique du début à la fin</li>
+  </ul>
+</div>
+<form id="qf" class="box" onsubmit="quote(event)">
+  <label>Nom et prénom *</label><input name="name" required autocomplete="name">
+  <label>Société</label><input name="company" autocomplete="organization">
+  <label>Téléphone *</label>
+  <input name="phone" type="tel" required pattern="[0-9 +]{8,14}" placeholder="Ex : 22 123 456" autocomplete="tel">
+  <label>E-mail</label><input name="email" type="email">
+  <label>Service souhaité *</label>
+  <select name="service" required>
+    <option>Création de site web</option>
+    <option>Installation réseau</option>
+    <option>Maintenance informatique</option>
+    <option>Équipement pour entreprise</option>
+    <option>Autre</option>
+  </select>
+  <label>Votre besoin *</label>
+  <textarea name="message" rows="4" required minlength="10" placeholder="Ex : installation Wi-Fi et câblage pour un local de 200 m²"></textarea>
+  <button class="btn" style="width:100%;margin-top:16px">Envoyer ma demande</button>
+  <p id="qm" role="status"></p>
+</form>
+</div>
+</div>
+</section>
+
+<section id="equipe">
+  <div class="wrap">
+<h2>Notre équipe</h2><p class="sub">Des passionnés d'informatique à votre service.</p>
+<div class="team">
+<div class="m">
+  <div class="av">
+    <img class="img" src="c:\Users\zayne\OneDrive\Desktop\projet DevSmart\WhatsApp Image 2026-10-16 at 18.24.30 (2).jpeg" alt="">
+  </div>
+  <h3>Zayneb Ben Arfa</h3><p>Directrice</p>
+</div>
+<div class="m">
+  <div class="av">
+    <img class="img" src="c:\Users\zayne\OneDrive\Desktop\projet DevSmart\WhatsApp Image 2026-10-16 at 18.24.30.jpeg" alt="">
+  </div>
+  <h3>Iheb Mhemdi</h3><p>Responsable RH</p>
+</div>
+<div class="m">
+  <div class="av">
+    <img class="img" src="c:\Users\zayne\OneDrive\Desktop\projet DevSmart\WhatsApp Image 2026-10-16 at 18.24.30 (1).jpeg" alt="">
+  </div>
+  <h3>Maram kaabi</h3><p>Responsable Communication</p>
+</div>
+<div class="m">
+  <div class="av">
+    <img class="img" src="c:\Users\zayne\OneDrive\Desktop\projet DevSmart\WhatsApp Image 2026-10-16 at 18.24.31.jpeg" alt="">
+  </div>
+  <h3>Med Aziz Hlel</h3><p>Responsable Commercial</p>
+</div>
+<div class="m">
+  <div class="av">
+    <img class="img" src="c:\Users\zayne\OneDrive\Desktop\projet DevSmart\WhatsApp Image 2026-10-16 at 18.24.31 (1).jpeg" alt="">
+  </div>
+  <h3>Yosser Awaissi</h3><p>Responsable Technique</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="wrap">
+<h2>Contactez-nous</h2><p class="sub">Devis gratuit pour vos projets professionnels.</p>
+<div class="contact">
+<div>
+  <ul>
+    <li>📍 <span>Adresse : Siliana 6100 , Tunisie</span></li>
+    <li>📞 <span>+216 54 765 853</span></li>
+    <li>✉️ <span>Devsmart4@gmail.com</span></li>
+    <li>🕘 <span>Lun – Sam : 9h – 18h</span></li>
+  </ul>
+<div class="soc">
+  <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+  <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+</div>
+</div>
+<div style="padding:0;overflow:hidden;min-height:260px;display:grid;place-items:center;background:linear-gradient(135deg,#1e6bff22,#00c2d122);color:var(--mut);text-align:center">📍<br>Emplacement de la boutique<br><small>(carte à ajouter)</small>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+  <img class="lf" src="c:\Users\zayne\OneDrive\Desktop\projet DevSmart\logo-full.webp" alt="DevSmart – Vos solutions informatiques intelligentes"><br>© 2026 DevSmart. Tous droits réservés.
+</footer>
+
+<div class="ov" id="ov">
+
+</div>
+<aside class="dr" id="dr" aria-label="Panier">
+<div class="dh">
+  <h3 id="dt">Mon panier</h3>
+  <button class="x" id="cl" aria-label="Fermer">✕</button>
+</div>
+<div class="db" id="db">
+
+</div>
+<div class="df" id="df">
+
+</div>
+</aside>
+<div class="toast" id="ts">
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
